@@ -17,4 +17,7 @@ public class StudentService {
     public Student getById(String id){
         return repository.findById(id).orElse(null);
     }
+    public List<Student> getByKeyword(String keyword){
+        return repository.findByNameContaining(keyword);
+    }
 }
