@@ -20,4 +20,12 @@ public class StudentService {
     public List<Student> getByKeyword(String keyword){
         return repository.findByNameContaining(keyword);
     }
+//    public void addStudent(Student student){
+//        int maxId = repository.getCurrentMaxId();
+//        student.setId(String.valueOf(maxId));
+//        repository.save(student);
+//    }
+    public void addStudent(Student student){
+        repository.save(student);
+    }
 }
