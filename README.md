@@ -1,7 +1,7 @@
 # Notes for dev
 Hiện đang làm tới lab 4
 - Chức năng add student: đã thành công, tuy nhiên id còn phải nhập thủ công. Cần phải thiết kế sao cho: user chỉ nhập tên, email, tuổi, còn id thì Service tự thêm vào.
-- Chức năng delete, edit this student: chưa làm
+- Chức năng delete, edit this student: đã hiện thực
 - Cấu hình env: chưa cấu hình. Hiện tại database vẫn đang dùng SQLite.
 
 # Lưu ý 

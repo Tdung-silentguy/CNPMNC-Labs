@@ -28,4 +28,10 @@ public class StudentService {
     public void addStudent(Student student){
         repository.save(student);
     }
+    public void editStudent(Student student){
+        repository.save(student);
+    }
+    public void deleteStudent(String id){
+        repository.deleteById(id);
+    }
 }

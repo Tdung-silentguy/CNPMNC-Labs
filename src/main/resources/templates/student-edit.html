@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org"> <!-- Khai bao namespace de dung th:* -->
+
+<head>
+    <meta charset="UTF-8">
+    <title>Detail View</title>
+    <!-- CSS don gian -->
+    <style>
+        body { font-family: sans-serif; padding: 20px; }
+        table { width: 100%; border-collapse: collapse; margin-top: 20px; }
+        th, td { border: 1px solid #ddd; padding: 8px; text-align: left; }
+        th { background-color: #f2f2f2; }
+    </style>
+</head>
+
+<body>
+
+<div>
+    <h2>Chinh sua thong tin sinh vien</h2>
+    <form th:action="@{/students/add}" th:object="${student}" method="POST">
+
+        <div>
+            <label>ID:</label>
+            <input type="text" th:field="*{id}" readonly/>
+        </div>
+
+        <div>
+            <label>Ho va ten:</label>
+            <input type="text" th:field="*{name}"/>
+        </div>
+
+        <div>
+            <label>Email:</label>
+            <input type="email" th:field="*{email}"/>
+        </div>
+
+        <div>
+            <label>Tuoi:</label>
+            <input type="number" th:field="*{age}"/>
+        </div>
+
+        <button type="submit">Luu thay doi</button>
+    </form>
+</div>
+</body>
+
+</html>
