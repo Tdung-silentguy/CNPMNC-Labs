@@ -65,4 +65,21 @@ public class StudentWebController {
         return "redirect:/students";
     }
 
+    @GetMapping("/edit/{id}")
+    public String showEditForm(@PathVariable("id") String id, Model model){
+        model.addAttribute("student", service.getById(id));
+        return "student-edit";
+    }
+
+    @PostMapping("/edit/{id}")
+    public String editStudent(@ModelAttribute("student") Student student){
+        service.editStudent(student);
+        return "redirect:/students";
+    }
+    @GetMapping("/delete/{id}")
+    public String deleteStudent(@PathVariable("id") String id){
+        service.deleteStudent(id);
+        return "redirect:/students";
+    }
+
 }
