@@ -58,6 +58,9 @@ public class StudentWebController {
 
     @PostMapping("/add")
     public String addStudent(@ModelAttribute("student") Student student){
+        if (student.getId() != null && student.getId().isEmpty()) {
+        student.setId(null); 
+    }
         service.addStudent(student);
         return "redirect:/students";
     }

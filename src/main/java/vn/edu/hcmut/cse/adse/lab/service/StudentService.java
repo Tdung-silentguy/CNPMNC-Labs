@@ -26,8 +26,29 @@ public class StudentService {
 //        repository.save(student);
 //    }
     public void addStudent(Student student){
+        student.setId(getNextId());
         repository.save(student);
+//        addStudentAuxiliary(student.getName(), student.getEmail(), student.getAge());
+
+//        Student newStudent = new Student();
+//        newStudent.setId(getNextId());
+//        newStudent.setName(student.getName());
+//        newStudent.setEmail(student.getEmail());
+//        newStudent.setAge(student.getAge());
+//        newStudent.setNew(true);
+//        repository.save(newStudent);
     }
+    public String getNextId() {
+        int nextId = 1;
+
+        // Loop until repository.existsById returns false
+        while (repository.existsById(String.valueOf(nextId))) {
+            nextId++;
+        }
+
+        return String.valueOf(nextId);
+    }
+
     public void editStudent(Student student){
         repository.save(student);
     }
