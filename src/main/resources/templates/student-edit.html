@@ -17,7 +17,7 @@
 
 <div>
     <h2>Chinh sua thong tin sinh vien</h2>
-    <form th:action="@{/students/add}" th:object="${student}" method="POST">
+    <form th:action="@{/students/edit/{id}(id=${student.id})}" th:object="${student}" method="POST">
 
         <div>
             <label>ID:</label>
