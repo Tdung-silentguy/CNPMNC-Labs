@@ -6,6 +6,7 @@ import vn.edu.hcmut.cse.adse.lab.entity.Student;
 import vn.edu.hcmut.cse.adse.lab.repository.StudentRepository;
 
 import java.util.List;
+import java.util.Random;
 
 @Service
 public class StudentService {
@@ -20,24 +21,29 @@ public class StudentService {
     public List<Student> getByKeyword(String keyword){
         return repository.findByNameContaining(keyword);
     }
+    
+    private String generateUnique5DigitId() {
+        Random random = new Random();
+        String newId;
+        do {
+            int randomNumber = 10000 + random.nextInt(90000);
+            newId = String.valueOf(randomNumber);
+        } while (repository.existsById(newId)); 
+        
+        return newId;
+    }
+
 //    public void addStudent(Student student){
 //        int maxId = repository.getCurrentMaxId();
 //        student.setId(String.valueOf(maxId));
 //        repository.save(student);
 //    }
-    public void addStudent(Student student){
-        student.setId(getNextId());
+    public synchronized void addStudent(Student student){
+        student.setId(generateUnique5DigitId());
+        
         repository.save(student);
-//        addStudentAuxiliary(student.getName(), student.getEmail(), student.getAge());
-
-//        Student newStudent = new Student();
-//        newStudent.setId(getNextId());
-//        newStudent.setName(student.getName());
-//        newStudent.setEmail(student.getEmail());
-//        newStudent.setAge(student.getAge());
-//        newStudent.setNew(true);
-//        repository.save(newStudent);
     }
+
     public String getNextId() {
         int nextId = 1;
 

@@ -7,7 +7,6 @@ import org.springframework.data.domain.Persistable;
 @Table(name="students")
 public class Student {
     @Id
-//    @GeneratedValue(strategy = GenerationType.UUID)
     private String id;
 
     private String name;
