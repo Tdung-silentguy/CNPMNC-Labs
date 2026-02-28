@@ -109,5 +109,3 @@ Thêm sinh viên:
 ![Chi tiết sinh viên 3](Lab4Screenshots/detail3.png)
 
 ![Xóa sinh viên 2](Lab4Screenshots/delete2.png)
-
-![Danh sách sinh viên 4](Lab4Screenshots/list4.png)
