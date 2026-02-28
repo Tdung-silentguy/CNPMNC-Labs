@@ -84,30 +84,30 @@ Mở trình duyệt và truy cập vào địa chỉ sau:
 
 Thêm sinh viên:
 
-![Danh sách sinh viên 1](Lab4Screenshots\list1.png)
+![Danh sách sinh viên 1](Lab4Screenshots/list1.png)
 
-![Tìm kiếm sinh viên 1](Lab4Screenshots\search1.png)
+![Tìm kiếm sinh viên 1](Lab4Screenshots/search1.png)
 
-![Chi tiết sinh viên 1](Lab4Screenshots\detail1.png)
+![Chi tiết sinh viên 1](Lab4Screenshots/detail1.png)
 
-![Xóa sinh viên 1](Lab4Screenshots\delete1.png)
+![Xóa sinh viên 1](Lab4Screenshots/delete1.png)
 
-![Thêm sinh viên 1](Lab4Screenshots\add1.png)
+![Thêm sinh viên 1](Lab4Screenshots/add1.png)
 
-![Thêm sinh viên 2](Lab4Screenshots\add2.png)
+![Thêm sinh viên 2](Lab4Screenshots/add2.png)
 
-![Danh sách sinh viên 2](Lab4Screenshots\list2.png)
+![Danh sách sinh viên 2](Lab4Screenshots/list2.png)
 
-![Chi tiết sinh viên 2](Lab4Screenshots\detail2.png)
+![Chi tiết sinh viên 2](Lab4Screenshots/detail2.png)
 
-![Chỉnh sửa sinh viên 1](Lab4Screenshots\edit1.png)
+![Chỉnh sửa sinh viên 1](Lab4Screenshots/edit1.png)
 
-![Chỉnh sửa sinh viên 2](Lab4Screenshots\edit2.png)
+![Chỉnh sửa sinh viên 2](Lab4Screenshots/edit2.png)
 
-![Danh sách sinh viên 3](Lab4Screenshots\list3.png)
+![Danh sách sinh viên 3](Lab4Screenshots/list3.png)
 
-![Chi tiết sinh viên 3](Lab4Screenshots\detail3.png)
+![Chi tiết sinh viên 3](Lab4Screenshots/detail3.png)
 
-![Xóa sinh viên 2](Lab4Screenshots\delete2.png)
+![Xóa sinh viên 2](Lab4Screenshots/delete2.png)
 
-![Danh sách sinh viên 4](Lab4Screenshots\list4.png)
+![Danh sách sinh viên 4](Lab4Screenshots/list4.png)
