@@ -12,13 +12,15 @@ public class StudentService {
     @Autowired
     private StudentRepository repository;
     public List<Student> getAll(){
-        return repository.findAll();
+//        return repository.findAll();
+        return repository.findAllByOrderByIdAsc();
     }
     public Student getById(String id){
         return repository.findById(id).orElse(null);
     }
     public List<Student> getByKeyword(String keyword){
-        return repository.findByNameContaining(keyword);
+//        return repository.findByNameContaining(keyword);
+        return repository.findByNameContainingIgnoreCase(keyword);
     }
     public void addStudent(Student student){
         student.setId(getNextId());

@@ -8,6 +8,8 @@ import java.util.List;
 
 public interface StudentRepository extends JpaRepository<Student, String> {
     // only need to write method's name, framework will automatically implement it into SQL queries.
+    List<Student> findAllByOrderByIdAsc();
     List<Student> findByNameContaining(String keyword);
+    List<Student> findByNameContainingIgnoreCase(String keyword);
 //    @Query("SELECT MAX(id) FROM students") int getCurrentMaxId();
 }
