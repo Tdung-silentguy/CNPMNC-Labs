@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org"> <!-- Khai bao namespace de dung th:* -->
+
+<head>
+    <meta charset="UTF-8">
+    <title>Detail View</title>
+    <!-- CSS don gian -->
+    <style>
+        body { font-family: sans-serif; padding: 20px; }
+        table { width: 100%; border-collapse: collapse; margin-top: 20px; }
+        th, td { border: 1px solid #ddd; padding: 8px; text-align: left; }
+        th { background-color: #f2f2f2; }
+    </style>
+</head>
+
+<body>
+
+    <div>
+    <!--    Note: this viewer only run in case student is found. The case in which student isn't found hasn't been implemented -->
+        <h1>Thong tin sinh vien</h1>
+        <table>
+            <thead>
+            <tr>
+                <th>ID</th>
+                <th>Ho va ten</th>
+                <th>Email</th>
+                <th>Tuoi</th>
+            </tr>
+            </thead>
+            <tbody>
+            <!-- Cu phap Thymeleaf: Duyet qua danh sach "dsSinhVien" -->
+            <!-- th:each="bien_tam : ${key_trong_model}" -->
+            <tr th:style="${student.age}<18 ? 'color: red;' : 'color: black;'">
+                <td th:text="${student.id}">ID Mau</td>
+                <td th:text="${student.name}">Ten Mau</td>
+                <td th:text="${student.email}">Email Mau</td>
+                <td th:text="${student.age}">0</td>
+            </tr>
+            </tbody>
+        </table>
+    </div>
+
+    <div>
+<!--        <form method="POST" th:action="/students/delete/{id}(id=${student.id})}">-->
+<!--            <button type="submit">Delete this student</button>-->
+<!--        </form>-->
+        <a th:href="@{/students/delete/{id}(id=${student.id})}" onclick="return confirm('Are you sure you want to delete this student?');"><button>Delete this student</button></a>
+        <a th:href="@{/students/edit/{id}(id=${student.id})}"><button>Edit this student</button></a>
+    </div>
+
+</body>
+
+</html>
