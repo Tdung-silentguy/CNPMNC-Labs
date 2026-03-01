@@ -1,11 +1,13 @@
-# Project: Hệ Thống Quản Lý Sinh Viên (Student Management System)
+# Project: Hệ thống quản lý sinh viên (Student Management System)
 
-Đây là sản phẩm cuối cùng cho loạt bài thực hành "Xây Dựng Web App Căn Bản" môn Kỹ thuật phần mềm nâng cao.
+Đây là sản phẩm cuối cùng cho loạt bài thực hành "Xây Dựng Web App Căn Bản" môn Công nghệ phần mềm nâng cao (CO3065), học kỳ 252, trường Đại học Bách khoa - ĐHQG-HCM.
 
 ## 1. Thông tin nhóm
 
-- **Thành viên 1:** [Nguyễn Tấn Dũng] - [2310561]
-- **Thành viên 2:** [Hà Minh Phú] - [2312646]
+|STT|Họ và tên|MSSV|Vai trò|Contribution|
+|---|---|---|---|---|
+|1|Nguyễn Tấn Dũng|2310561|Lab 1-4|100%|
+|2|Hà Minh Phú|2312646|Lab 4-5|100%|
 
 ## 2. Công nghệ sử dụng
 
@@ -19,7 +21,7 @@
 
 Ứng dụng đã được triển khai và đang hoạt động trực tuyến. Truy cập qua đường dẫn sau:
 
-➡️ **[URL:](https://cnpmnc-labs.onrender.com/students)**
+➡️ **<https://cnpmnc-labs.onrender.com/student>)**
 
 ## 4. Hướng dẫn chạy dự án trên máy cục bộ (Local)
 
@@ -65,7 +67,7 @@ Tại thư mục gốc của project (nơi có file `pom.xml`), chạy lệnh sa
 
 -   Trên Windows:
     ```bash
-    ./mvnw spring-boot:run
+    ./mvnw.cmd spring-boot:run
     ```
 -   Trên macOS / Linux:
     ```bash
@@ -76,11 +78,14 @@ Tại thư mục gốc của project (nơi có file `pom.xml`), chạy lệnh sa
 
 **Bước 4: Truy cập ứng dụng**
 
-Mở trình duyệt và truy cập vào địa chỉ sau:
+Trên local, mở trình duyệt và truy cập vào địa chỉ sau:
 
 ➡️ **http://localhost:8080/students**
 
+Truy cập online: qua (đường dẫn sau)[https://cnpmnc-labs.onrender.com/student (đã nói ở mục 3).
+
 ## 5. Hình ảnh các tính năng
+Các hình ảnh sau được chụp lại trong giai đoạn chạy thử trên localhost, có giao diện và tính năng giống hệt với app đã deploy lên web.
 
 Danh sách sinh viên:
 ![Danh sách sinh viên 1](Lab4Screenshots/list1.png)
